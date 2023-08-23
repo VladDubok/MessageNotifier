@@ -1,16 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "Jow8Cvg+aI2t+YtXuJq8lrACcywx+QQAlYIpSi2MfXsL5/S6rLVijy+gJGo86iJmX8lwesPNd11JwGO0NWRCrQ==",
+  "dgSpecHash": "CFu9zPT2isDHF6mkfQmv8BvpCdkC6MWtj7DHVhjrg54AK3FJ0ht7JwwHUN2/IKkSnLk1CIKSl3M8ane9wBD4+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vladyslav Dubok\\Projects\\MessageNotifier\\EmailService\\EmailService.csproj",
+  "projectFilePath": "/home/duckkick/Projects/MessageNotifier/EmailService/EmailService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vladyslav Dubok\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
-    "C:\\Users\\Vladyslav Dubok\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\Vladyslav Dubok\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
-    "C:\\Users\\Vladyslav Dubok\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "C:\\Users\\Vladyslav Dubok\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "C:\\Users\\Vladyslav Dubok\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\Vladyslav Dubok\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "/home/duckkick/.nuget/packages/microsoft.aspnetcore.openapi/7.0.10/microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "/home/duckkick/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/duckkick/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/home/duckkick/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/home/duckkick/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/home/duckkick/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/home/duckkick/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "/home/duckkick/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.9/microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512"
   ],
   "logs": []
 }

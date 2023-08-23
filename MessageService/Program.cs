@@ -1,4 +1,12 @@
+using MessageService.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<MessageContext>((sp, opt) =>
+{
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+}); 
 
 // Add services to the container.
 
