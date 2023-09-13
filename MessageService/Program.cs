@@ -1,12 +1,27 @@
 using MessageService.Data;
 using Microsoft.EntityFrameworkCore;
+using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<MessageContext>((sp, opt) =>
+builder.Services.AddDbContext<MessageApplicationContext>((sp, opt) =>
 {
     opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
-}); 
+});
+
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("localhost", "/", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+
+        cfg.ConfigureEndpoints(context);
+    });
+});
 
 // Add services to the container.
 

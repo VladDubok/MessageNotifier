@@ -15,9 +15,9 @@ namespace Namespace
     [ApiController]
     public class MessageController : ControllerBase
     {
-        private readonly MessageContext _context;
+        private readonly MessageApplicationContext _context;
 
-        public MessageController(MessageContext context)
+        public MessageController(MessageApplicationContext context)
         {
             _context = context;
         }

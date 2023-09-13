@@ -4,14 +4,14 @@
     "/home/duckkick/Projects/MessageNotifier/MessageService/MessageService.csproj": {}
   },
   "projects": {
-    "/home/duckkick/Projects/MessageNotifier/MessageService/MessageService.csproj": {
+    "/home/duckkick/Projects/MessageNotifier/Common/Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/duckkick/Projects/MessageNotifier/MessageService/MessageService.csproj",
-        "projectName": "MessageService",
-        "projectPath": "/home/duckkick/Projects/MessageNotifier/MessageService/MessageService.csproj",
+        "projectUniqueName": "/home/duckkick/Projects/MessageNotifier/Common/Common.csproj",
+        "projectName": "Common",
+        "projectPath": "/home/duckkick/Projects/MessageNotifier/Common/Common.csproj",
         "packagesPath": "/home/duckkick/.nuget/packages/",
-        "outputPath": "/home/duckkick/Projects/MessageNotifier/MessageService/obj/",
+        "outputPath": "/home/duckkick/Projects/MessageNotifier/Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/duckkick/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,83 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.9, 7.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/duckkick/Projects/MessageNotifier/MessageService/MessageService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/duckkick/Projects/MessageNotifier/MessageService/MessageService.csproj",
+        "projectName": "MessageService",
+        "projectPath": "/home/duckkick/Projects/MessageNotifier/MessageService/MessageService.csproj",
+        "packagesPath": "/home/duckkick/.nuget/packages/",
+        "outputPath": "/home/duckkick/Projects/MessageNotifier/MessageService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/duckkick/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/duckkick/Projects/MessageNotifier/Common/Common.csproj": {
+                "projectPath": "/home/duckkick/Projects/MessageNotifier/Common/Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.1, )"

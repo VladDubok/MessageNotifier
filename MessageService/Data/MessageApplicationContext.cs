@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MessageService.Data
 {
-    public class MessageContext : DbContext
+    public class MessageApplicationContext : DbContext
     {
         public DbSet<Message> Messages { get; set; }
         public DbSet<MessageEvent> MessageEvents { get; set; }
 
-        public MessageContext(DbContextOptions options) : base(options)
+        public MessageApplicationContext(DbContextOptions options) : base(options)
         {
         }
 
