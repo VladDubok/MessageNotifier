@@ -1,11 +1,21 @@
 using Common.RabbitMq.Messages;
 using MassTransit;
 
-namespace Common.RabbitMq.Consumers;
+namespace EmailService.Consumers;
 public class SendEmailMessageConsumer : IConsumer<SendEmailMessage>
 {
     public Task Consume(ConsumeContext<SendEmailMessage> context)
     {
-        throw new NotImplementedException();
+        switch (context.Message.Event)
+        {
+            case "AddEmailMessage":
+            {
+                Console.WriteLine("SendEmail");
+                break;
+            }
+                
+        }
+
+        return Task.CompletedTask;
     }
 }

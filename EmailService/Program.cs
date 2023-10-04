@@ -1,4 +1,4 @@
-using Common.RabbitMq.Consumers;
+using EmailService.Consumers;
 using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
