@@ -1,6 +1,7 @@
 using MessageService.Data;
 using Microsoft.EntityFrameworkCore;
 using MassTransit;
+using MessageService.HostedServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,7 @@ builder.Services.AddMassTransit(x =>
 {
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("localhost", "/", h =>
+        cfg.Host("rabbitmq://guest:guest@rabbitmq", h =>
         {
             h.Username("guest");
             h.Password("guest");
@@ -22,6 +23,8 @@ builder.Services.AddMassTransit(x =>
         cfg.ConfigureEndpoints(context);
     });
 });
+
+builder.Services.AddHostedService<DomainEventHostedService>();
 
 // Add services to the container.
 
